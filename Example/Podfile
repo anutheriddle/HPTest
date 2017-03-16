@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HPTest_Example' do
+  pod 'HPTest', :path => '../'
+
+  target 'HPTest_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

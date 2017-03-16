@@ -1,0 +1,22 @@
+{
+  "name": "HPTest",
+  "version": "0.1.0",
+  "summary": "A short description of HPTest.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/anurag_android@hotmail.com/HPTest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "anurag_android@hotmail.com": "anurag_android@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/anurag_android@hotmail.com/HPTest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HPTest/Classes/**/*"
+}

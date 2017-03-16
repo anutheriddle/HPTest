@@ -1,0 +1,6 @@
+framework module HPTest {
+  umbrella header "HPTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

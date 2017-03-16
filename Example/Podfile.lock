@@ -1,0 +1,16 @@
+PODS:
+  - HPTest (0.1.0)
+
+DEPENDENCIES:
+  - HPTest (from `../`)
+
+EXTERNAL SOURCES:
+  HPTest:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HPTest: 974fbaa6b9e869dd39e7cef8ea723b0c56b3ebd1
+
+PODFILE CHECKSUM: 097f72d4a9fea69f212907ebe2051473b33e46f6
+
+COCOAPODS: 1.2.0

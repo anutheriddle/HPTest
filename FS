@@ -26,7 +26,8 @@ echo  ${red} Step 3 register trunk user by email ${reset}
  pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='macbook'
 
 echo  ${red} Step 4 trunk push to podspec  ${reset}
-
+echo ${red} are verify your mail say yes or no ? ${reset}
 read AreYouVerify
-echo $AreYouVerify by me
+echo $AreYouVerify you said we are processing 
+
 pod trunk push HPTest.podspec

@@ -30,6 +30,7 @@ echo  ${red} Step 4 trunk push to podspec  ${reset}
 
 $ COCOAPODS_TRUNK_TOKEN=*** bundle exec pod trunk me
 
+echo ${COCOAPODS_TRUNK_TOKEN} <—token
 
 # pod trunk push HPTest.podspec
 

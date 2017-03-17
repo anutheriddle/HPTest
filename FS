@@ -11,7 +11,8 @@ reset=`tput sgr0`
 echo  ${red} Step 1 to push recent code to github ${reset}
 
 git add .
-git commit -m ”initial”
+git commit -m ”IS”
+git commit add origin https://github.com/anutheriddle/HPTest.git
 git push -u origin master
 
 
@@ -22,14 +23,8 @@ pod lib lint HPTest.podspec
 
 echo  ${red} Step 3 register trunk user by email ${reset}
 
-# pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='macbook'
+pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='macbook'
 
 echo  ${red} Step 4 trunk push to podspec  ${reset}
-
-# Pod trunk me
-
-  grep -s password ~/.netrc | awk '{print $2}'
-
-travis encrypt COCOAPODS_TRUNK_TOKEN= grep -s password ~/.netrc | awk '{print $2}' --add env
 
 pod trunk push HPTest.podspec

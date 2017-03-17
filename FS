@@ -4,4 +4,7 @@ git add .
 git commit -m ”initial”
 git push -u origin master
 
+echo —————————Wait checking validation————————— 
 pod lib lint HPTest.podspec
+echo —————————Result Above————————— 
+

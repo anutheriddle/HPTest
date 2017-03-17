@@ -6,7 +6,7 @@
 # Step 4 push code through podspec 
 
 
-echo # Step 1 to push recent code to github 
+echo  Step 1 to push recent code to github 
 
 git add .
 git commit -m ”initial”
@@ -14,16 +14,18 @@ git push -u origin master
 
 
 
-echo # Step 2 check podspec validation
+echo  Step 2 check podspec validation
 
 pod lib lint HPTest.podspec
 
-echo # Step 3 register trunk user by email
+echo  Step 3 register trunk user by email
 
 # pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='macbook'
 
-echo # Step 4 trunk push to podspec  
+echo  Step 4 trunk push to podspec  
 
-pod trunk push HPTest.podspec
+Pod trunk me
+
+# pod trunk push HPTest.podspec
 
 

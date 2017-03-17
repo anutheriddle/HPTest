@@ -6,8 +6,9 @@
 # Step 4 push code through podspec 
 
 red=`tput setaf 1`
+reset=`tput sgr0`
 
-echo  “${red} Step 1 to push recent code to github “
+echo  “${red} Step 1 to push recent code to github ${reset}“
 
 git add .
 git commit -m ”initial”

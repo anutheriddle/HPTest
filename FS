@@ -3,3 +3,5 @@ echo hello anurag
 git add .
 git commit -m ”initial”
 git push -u origin master
+
+pod lib lint HPTest.podspec

@@ -28,8 +28,10 @@ echo  ${red} Step 4 trunk push to podspec  ${reset}
 
 # Pod trunk me
 
+~/.netrc
+
 machine trunk.cocoapods.org
-   login user@example.com
+   login anurag.d.sharma@capgemini.com
    password 0000000011111111
 
 # pod trunk push HPTest.podspec

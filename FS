@@ -6,7 +6,7 @@
 # Step 4 push code through podspec 
 
 
-echo  Step 1 to push recent code to github 
+echo  ${red} Step 1 to push recent code to github 
 
 git add .
 git commit -m ”initial”

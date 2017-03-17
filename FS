@@ -24,7 +24,13 @@ echo  Step 3 register trunk user by email
 
 echo  Step 4 trunk push to podspec  
 
-Pod trunk me
+
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`
+echo "${red}red text ${green}green text${reset}"
+
+# Pod trunk me
 
 # pod trunk push HPTest.podspec
 

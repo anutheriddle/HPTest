@@ -13,7 +13,7 @@ echo  ${red} Step 1 to push recent code to github ${reset}
 git add .
 git commit -m ”IS”
 git commit add origin https://github.com/anutheriddle/HPTest.git
-git push -u origin master
+git push -f origin master
 
 
 

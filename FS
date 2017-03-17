@@ -27,7 +27,7 @@ pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='mac
 echo  ${red} Step 4 trunk push to podspec  ${reset}
 
 # Pod trunk me
-pod trunk info
+pod trunk info register
 
 pod trunk push HPTest.podspec
 

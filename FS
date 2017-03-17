@@ -14,5 +14,7 @@ echo —————————Result Above—————————
 
 echo ——————————  publishing cocoapod —————
 
+pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='macbook'
+
 pod trunk push HPTest.podspec
 

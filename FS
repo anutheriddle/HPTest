@@ -5,6 +5,7 @@
 # Step 3 register trunk user by email
 # Step 4 push code through podspec 
 
+red=`tput setaf 1`
 
 echo  ${red} Step 1 to push recent code to github 
 
@@ -25,7 +26,7 @@ echo  Step 3 register trunk user by email
 echo  Step 4 trunk push to podspec  
 
 
-red=`tput setaf 1`
+
 green=`tput setaf 2`
 reset=`tput sgr0`
 echo "${red}red text ${green}green text${reset}"

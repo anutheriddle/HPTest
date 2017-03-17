@@ -27,8 +27,10 @@ pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='mac
 echo  ${red} Step 4 trunk push to podspec  ${reset}
 
 # Pod trunk me
-pod trunk info me
 
-pod trunk push HPTest.podspec
+$ COCOAPODS_TRUNK_TOKEN=*** bundle exec pod trunk me
+
+
+# pod trunk push HPTest.podspec
 
 

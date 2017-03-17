@@ -7,7 +7,7 @@
 
 red=`tput setaf 1`
 
-echo  ${red} Step 1 to push recent code to github 
+echo  “${red} Step 1 to push recent code to github “
 
 git add .
 git commit -m ”initial”

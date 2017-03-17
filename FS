@@ -26,8 +26,6 @@ pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='mac
 
 echo  ${red} we will wait for 10 seconds  ${reset}
 
-import time
-time.sleep(10)
 
 echo  ${red} Step 4 trunk push to podspec  ${reset}
 

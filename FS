@@ -27,4 +27,6 @@ echo  ${red} Step 3 register trunk user by email ${reset}
 
 echo  ${red} Step 4 trunk push to podspec  ${reset}
 
+read AreYouVerify
+echo $AreYouVerify by me
 pod trunk push HPTest.podspec

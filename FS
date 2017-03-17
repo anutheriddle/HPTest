@@ -22,7 +22,7 @@ pod lib lint HPTest.podspec
 
 echo  ${red} Step 3 register trunk user by email ${reset}
 
-pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='macbook'
+# pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='macbook'
 
 echo  ${red} Step 4 trunk push to podspec  ${reset}
 
@@ -30,9 +30,6 @@ echo  ${red} Step 4 trunk push to podspec  ${reset}
 
   grep -s password ~/.netrc | awk '{print $2}'
 
-machine trunk.cocoapods.org
-   login anurag.d.sharma@capgemini.com
-   password grep -s password ~/.netrc | awk '{print $2}'
 
 pod trunk push HPTest.podspec
 

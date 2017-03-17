@@ -28,9 +28,9 @@ echo  ${red} Step 4 trunk push to podspec  ${reset}
 
 # Pod trunk me
 
- $token = grep -s password ~/.netrc | awk '{print $2}'
+  grep -s password ~/.netrc | awk '{print $2}'
 
-travis encrypt COCOAPODS_TRUNK_TOKEN=${token} --add env
+travis encrypt COCOAPODS_TRUNK_TOKEN= grep -s password ~/.netrc | awk '{print $2}' --add env
 
 pod trunk push HPTest.podspec
 

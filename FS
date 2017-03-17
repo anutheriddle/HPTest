@@ -1,10 +1,18 @@
 #!/bin/bash
-echo hello anurag 
+
+echo —————————Pushing Resent Code To Git HUB————————— 
+
 git add .
 git commit -m ”initial”
 git push -u origin master
 
+echo ——————code pushed to github
+
 echo —————————Wait checking validation————————— 
 pod lib lint HPTest.podspec
 echo —————————Result Above————————— 
+
+echo ——————————  publishing cocoapod —————
+
+pod trunk push HPTest.podspec
 

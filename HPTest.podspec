@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HPTest'
   s.version          = '1.0.0'
-  s.summary          = 'Aa shorty description of HPTest  jd llljl jdila lj ldl can come here ok  '
+  s.summary          = 'Aa shorty description of HPTest can come here ok  '
 
 
 

@@ -28,11 +28,9 @@ echo  ${red} Step 4 trunk push to podspec  ${reset}
 
 # Pod trunk me
 
+grep -s password ~/.netrc | awk '{print $2}'
 
 
-machine trunk.cocoapods.org
-   login anuragsharma
-   password Onkar@07
 
 # pod trunk push HPTest.podspec
 

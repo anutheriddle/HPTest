@@ -1,6 +1,5 @@
 #!/bin/bash
 echo hello anurag 
 git add .
-git commit -m ‘I’
-git remote add origin https://github.com/anutheriddle/HPTest.git 
+git commit -m initial commit anurag
 git push -u origin master

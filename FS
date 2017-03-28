@@ -16,18 +16,19 @@ git commit add origin https://github.com/anutheriddle/HPTest.git
 git push -f origin master
 
 
+echo done with pushing
 
-echo  ${red} Step 2 check podspec validation ${reset}
+# echo  ${red} Step 2 check podspec validation ${reset}
 
-pod lib lint HPTest.podspec
+# pod lib lint HPTest.podspec
 
-echo  ${red} Step 3 register trunk user by email ${reset}
+# echo  ${red} Step 3 register trunk user by email ${reset}
 
- pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='macbook'
+# pod trunk register anurag.d.sharma@capgemini.com ‘Anurag’ --description='macbook'
 
-echo  ${red} Step 4 trunk push to podspec  ${reset}
-echo ${red} are verify your mail say yes or no ? ${reset}
-read AreYouVerify
-echo $AreYouVerify you said we are processing 
+# echo  ${red} Step 4 trunk push to podspec  ${reset}
+# echo ${red} are verify your mail say yes or no ? ${reset}
+# read AreYouVerify
+# echo $AreYouVerify you said we are processing 
 
-pod trunk push HPTest.podspec
+# pod trunk push HPTest.podspec

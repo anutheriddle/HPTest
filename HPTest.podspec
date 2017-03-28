@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HPTest'
-  s.version          = '5.0.0'
-  s.summary          = 'Aa anurag description of HPTest can come here ok  '
+  s.version          = '6.0.0'
+  s.summary          = 'we are going to check whether some changes may happen or not  '
 
 
 

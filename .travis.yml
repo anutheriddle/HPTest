@@ -1,23 +1,20 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
-osx_image: xcode 8.3
 language: objective-c
-
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+osx_image: xcode7.3
+cache:
+  bundler: true
+  cocoapods: true
+  directories:
+    - build
+before_install:
+  - (ruby --version)
+  - sudo chown -R travis ~/Library/RubyMotion
+  - sudo mkdir -p ~/Library/RubyMotion/build
+  - sudo chown -R travis ~/Library/RubyMotion/build
+  - sudo motion update
+after_success:
+  - bin/travis_deploy
 script:
-- set -o pipefail && xcodebuild test -workspace Example/HPTest.xcworkspace -scheme HPTest-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
-# Following extra lines added for automate cocoapod release 
-# Late if need can follow https://fuller.li/posts/automated-cocoapods-releases-with-ci/ 
-
-deploy:
-  provider: script
-  script: ./scripts/push.sh
-  on:
-    tags: false
+  - bundle install --jobs=3 --retry=3
+  - pod repo update && rake pod:install
+  - bundle exec rake clean
+  - bundle exec rake spec

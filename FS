@@ -11,7 +11,8 @@ reset=`tput sgr0`
 echo  ${red} Step 1 to push recent code to github ${reset}
 
 git add .
-git commit -m ”IS”
+git commit -m ‘Release 5.0.0’
+git tag 5.0.0
 git commit add origin https://github.com/anutheriddle/HPTest.git
 git push -f origin master
 

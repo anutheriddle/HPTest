@@ -1,20 +1,13 @@
 language: objective-c
-osx_image: xcode7.3
-cache:
-  bundler: true
-  cocoapods: true
-  directories:
-    - build
+osx_image: xcode7
 before_install:
-  - (ruby --version)
-  - sudo chown -R travis ~/Library/RubyMotion
-  - sudo mkdir -p ~/Library/RubyMotion/build
-  - sudo chown -R travis ~/Library/RubyMotion/build
-  - sudo motion update
-after_success:
-  - bin/travis_deploy
+- gem install xcpretty --no-document
 script:
-  - bundle install --jobs=3 --retry=3
-  - pod repo update && rake pod:install
-  - bundle exec rake clean
-  - bundle exec rake spec
+- set -o pipefail && xcodebuild -project Commander.xcodeproj -scheme Commander -sdk macosx test | xcpretty -c
+- set -o pipefail && xcodebuild -project Commander.xcodeproj -scheme Commander -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO test | xcpretty -c
+- pod lib lint
+deploy:
+  provider: script
+  script: ./scripts/push.sh
+  on:
+    tags: true

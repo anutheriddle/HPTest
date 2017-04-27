@@ -3,4 +3,5 @@
 source ~/.rvm/scripts/rvm
 rvm use default
 pod trunk push
+echo "Anurag information"
 

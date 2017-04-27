@@ -17,9 +17,9 @@ script:
 # Late if need can follow https://fuller.li/posts/automated-cocoapods-releases-with-ci/ 
 
 deploy:
-  provider: releases
-  api_key:
-    secure: 00a6c9a63fe3668f7e029e8359cec86e6fad5773
-    skip_cleanup: true
+  provider: script
+  script: ./scripts/push.sh production $TRAVIS_TAG
+  skip_cleanup: true
   on:
+    branch: master
     tags: true
